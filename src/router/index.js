@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory('/Tea-Talk/'),
   routes: [
     //前台
     {
@@ -20,7 +20,7 @@ const router = createRouter({
           path: 'about',
           component: () => import('../views/AboutView.vue')
         },
-       
+
         {
           path: 'qa',
           component: () => import('../views/QAView.vue')
