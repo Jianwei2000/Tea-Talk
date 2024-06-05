@@ -88,7 +88,8 @@
                   訂購人: {{ order.user.name }} <br />
                   email: {{ order.user.email }} <br />
                   連絡電話: {{ order.user.tel }} <br />
-                  地址: {{ order.user.address }}
+                  地址: {{ order.user.address }} <br />
+                  備註: {{ order.message }}
                 </div>
               </div>
 
