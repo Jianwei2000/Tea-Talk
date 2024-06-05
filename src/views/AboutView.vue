@@ -1,0 +1,76 @@
+<script setup></script>
+
+<template>
+  <div class="banner-about position-relative mt-5">
+    <div class="container position-absolute top-50 start-50 translate-middle text-center">
+      <h1 class="text-white">關於我們</h1>
+      <h2 class="h4 text-white">" 與您一同探索茶道文化 "</h2>
+    </div>
+  </div>
+  <div class="container my-5">
+    <!--麵包屑-->
+    <nav aria-label=" breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <RouterLink to="/" class="fw-bold text-decoration-none"
+            ><i class="bi bi-house-door-fill"></i> 首頁</RouterLink
+          >
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+      </ol>
+    </nav>
+
+    <!--圖-->
+    <!-- <div class="mt-5 shadow about-img" :style="{ 'background-image': 'url(' + about + ')' }"></div> -->
+    <!--文-->
+    <div class="about-body">
+      <h2 class="fw-bold mt-4 mb-4 fs-4">
+        <i class="bi bi-cup-hot-fill" /> 茶，帶給人們什麼樣的生活品味？
+      </h2>
+      <h3 class="lh-lg fs-6">
+        很多人悠遊茶香生活一輩子，尚無法理解喝茶的茶道文化。<br />
+        喝茶其實是真正修身養性的悠游自在生活方式。 懂得珍惜、懂得欣賞、懂得尊重、更懂得放下。<br />
+        工作壓力大，累了一天很不容易坐下休息、解脫自己。<br />
+        沸水沖泡一壷茶，看看茶壷的世界、它的變化萬千，喝什麼茶用什麼壷、沸水溫度若干、浸泡茶時間長短。<br />
+        多是因人嗜好而定。本著自在享受茶汁真正滋味，喚醒忙碌一天工作的壓力。藉由泡茶過程起手投足找到真實自在的片刻寧靜。<br />
+        這時候觀賞茶湯的色澤、啜飲美妙的茶湯滋味、找到好茶定義、找出自己短暫的快樂時光和安逸的生活享受。
+      </h3>
+      <h2 class="fw-bold mt-5 mb-4 fs-4">喝茶有什麼好處？</h2>
+      <h3 class="lh-lg fs-6">
+        茶對身體有諸多益處，包括： <br />
+        1.可使人精神振奮，增強思維和記憶能力。<br />
+        2.有助於消除疲勞，促進新陳代謝，並維持心臟、血管、胃腸等器官正常功能。<br />
+        3.對預防蛀牙有益。<br />
+        4.茶葉富含對人體有益的微量元素。<br />
+        5.有助於抑制細胞衰老，延年益壽。<br />
+        6.能延緩和預防血管內膜脂質斑塊形成，防止動脈硬化、高血壓和腦血栓等疾病，因此宜常飲茶。<br />
+        然而，茶葉中含有咖啡因，過量飲用可能使中樞神經過於興奮，引起心跳加快，增加心腎負擔，甚至影響睡眠。<br />
+        因此，適當的飲茶量和飲茶濃度是合理飲茶所需考慮的重要因素。
+      </h3>
+    </div>
+  </div>
+</template>
+
+<style>
+.banner-about {
+  height: 280px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1437315306147-0923bdb3fc12?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+}
+.about-img {
+  height: calc(100vh - 400px);
+  border-radius: 1rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 576px) {
+  .about-body {
+    padding: 0 2rem;
+  }
+}
+</style>
