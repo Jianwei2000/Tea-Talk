@@ -1,0 +1,1 @@
+import{I as s}from"./index-BjHk-I6Y.js";const r=s("favorite",{state:()=>({favorites:[]}),getters:{favoriteCount:e=>e.favorites.length,isFavorite:e=>t=>e.favorites.some(i=>i.id===t)},actions:{toggleFavorite(e){const t=this.favorites.findIndex(i=>i.id===e.id);t===-1?this.favorites.push(e):this.favorites.splice(t,1)}}});export{r as u};
