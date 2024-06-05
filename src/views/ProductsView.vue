@@ -45,11 +45,16 @@
           class="search-list shadow mt-2 position-absolute list-unstyled"
           :class="searchComplete ? '' : 'd-none'"
         >
-          <li class="search-result p-3 fs-7" v-for="item in matchProducts" :key="item.title">
-            <RouterLink class="text-decoration-none" :to="`/product/${item.id}`"
-              >{{ item.title }}
-            </RouterLink>
-          </li>
+          <RouterLink
+            v-for="item in matchProducts"
+            :key="item.title"
+            class="text-decoration-none"
+            :to="`/product/${item.id}`"
+          >
+            <li class="search-result p-3 fs-7">
+              {{ item.title }}
+            </li>
+          </RouterLink>
         </ul>
       </div>
     </div>
