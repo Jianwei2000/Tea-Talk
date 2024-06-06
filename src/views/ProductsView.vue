@@ -322,7 +322,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .search-list {
   width: 230px;
   background-color: #fff;

@@ -255,4 +255,11 @@ onMounted(() => {
   top: 10%;
   left: 25%;
 }
+@media (max-width: 768px) {
+  .product-img-imageUrl {
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+  }
+}
 </style>
