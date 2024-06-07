@@ -154,6 +154,7 @@ import { ref, onMounted, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useOrderStore } from '@/stores/orderStore'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 const store = useOrderStore()
 const selectedRadio = computed(() => store.selectedRadio)
@@ -184,7 +185,12 @@ function updateProgress(value) {
 
 function copyBank() {
   navigator.clipboard.writeText('1234561234567')
-  alert('帳號已複製')
+  Swal.fire({
+    icon: 'success',
+    title: '帳號已複製',
+    showConfirmButton: false,
+    timer: 1500
+  })
 }
 
 function goProducts() {

@@ -52,6 +52,10 @@ const router = createRouter({
         {
           path: 'orderfinished/:id',
           component: () => import('../views/OrderFinished.vue')
+        },
+        {
+          path: 'odsearch',
+          component: () => import('../views/OderSearch.vue')
         }
       ]
     },

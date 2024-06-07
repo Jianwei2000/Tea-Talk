@@ -15,6 +15,7 @@
               <li><RouterLink to="/about">關於我們</RouterLink></li>
 
               <li><RouterLink to="/qa">常見問題</RouterLink></li>
+              <li><RouterLink to="/odsearch">訂單查詢</RouterLink></li>
               <li><RouterLink to="/login">進入後台</RouterLink></li>
             </ul>
           </div>

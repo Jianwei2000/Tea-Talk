@@ -29,6 +29,9 @@
             <li>
               <RouterLink class="link pb-3 ms-4 fs-7 fw-bold" to="/qa">常見問題</RouterLink>
             </li>
+            <li>
+              <RouterLink class="link pb-3 ms-4 fs-7 fw-bold" to="/odsearch">訂單查詢</RouterLink>
+            </li>
           </ul>
         </div>
       </div>
@@ -89,6 +92,10 @@
 
                 <li>
                   <RouterLink class="link fs-5 fw-bold" to="/qa">常見問題</RouterLink>
+                </li>
+                <hr />
+                <li>
+                  <RouterLink class="link fs-5 fw-bold" to="/odsearch">訂單查詢</RouterLink>
                 </li>
               </ul>
             </div>
